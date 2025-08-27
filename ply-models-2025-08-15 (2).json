@@ -1,0 +1,357 @@
+{
+  "models": [
+    {
+      "id": "1",
+      "url": "/models/正元里-2025-Aug-05_2_ultra_low.ply",
+      "urls": {
+        "ultra_low": "/models/compressed/正元里-2025-Aug-05_2_ultra_low.ply.gz",
+        "low": "/models/compressed/正元里-2025-Aug-05_2_low.ply.gz",
+        "medium": "/models/compressed/正元里-2025-Aug-05_2_medium.ply.gz",
+        "high": "/models/compressed/正元里-2025-Aug-05_2_high.ply.gz"
+      },
+      "name": "正元里",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1754454920575",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-05_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-05_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-05_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-05_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-05_high.ply.gz"
+      },
+      "name": "scan",
+      "position": [
+        4.9,
+        0,
+        -1.1
+      ],
+      "rotation": [
+        0,
+        -1.0821041362364843,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1754455271221",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-05_2_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-05_2_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-05_2_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-05_2_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-05_2_high.ply.gz"
+      },
+      "name": "scan2",
+      "position": [
+        -8,
+        0.2,
+        -1.5
+      ],
+      "rotation": [
+        0,
+        -1.1693705988362006,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1754455800457",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-05_12_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-05_12_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-05_12_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-05_12_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-05_12_high.ply.gz"
+      },
+      "name": "scan3",
+      "position": [
+        11.2,
+        -1.2,
+        -2.4
+      ],
+      "rotation": [
+        0,
+        0.6108652381980153,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1754456334400",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-05_22-main_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-05_22-main_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-05_22-main_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-05_22-main_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-05_22-main_high.ply.gz"
+      },
+      "name": "scan4",
+      "position": [
+        -22.1,
+        -0.6,
+        -22.6
+      ],
+      "rotation": [
+        0,
+        3.735004599267865,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.8,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1754456932388",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-05_32_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-05_32_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-05_32_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-05_32_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-05_32_high.ply.gz"
+      },
+      "name": "scan5",
+      "position": [
+        1.2,
+        0,
+        -4.4
+      ],
+      "rotation": [
+        0,
+        -2.2689280275926285,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1754457507715",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-05_42_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-05_42_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-05_42_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-05_42_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-05_42_high.ply.gz"
+      },
+      "name": "scan6",
+      "position": [
+        -11.1,
+        0.5,
+        1.3
+      ],
+      "rotation": [
+        0,
+        1.9547687622336491,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.9,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1755234579814",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-14_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-14_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-14_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-14_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-14_high.ply.gz"
+      },
+      "name": "scan7",
+      "position": [
+        -28.3,
+        0.6,
+        4.4
+      ],
+      "rotation": [
+        0,
+        0.24434609527920614,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.9,
+        0.8
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1755234956017",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-14_2_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-14_2_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-14_2_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-14_2_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-14_2_high.ply.gz"
+      },
+      "name": "scan8",
+      "position": [
+        -30.8,
+        0.4,
+        14.4
+      ],
+      "rotation": [
+        0,
+        -2.286381320112572,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1755234974967",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-14_3_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-14_3_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-14_3_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-14_3_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-14_3_high.ply.gz"
+      },
+      "name": "scan9",
+      "position": [
+        -29.2,
+        0.5,
+        -8.7
+      ],
+      "rotation": [
+        0,
+        -2.4958208303518914,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1755234987201",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-14_4_ultra_low.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-14_4_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-14_4_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-14_4_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-14_4_high.ply.gz"
+      },
+      "name": "scan10",
+      "position": [
+        -20,
+        -0.4,
+        -0.6
+      ],
+      "rotation": [
+        0,
+        -2.740166925631097,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    },
+    {
+      "id": "1755236226782",
+      "url": "/models/compressed/Untitled_Scan-2025-Aug-14_5_medium.ply.gz",
+      "urls": {
+        "ultra_low": "/models/compressed/Untitled_Scan-2025-Aug-14_5_ultra_low.ply.gz",
+        "low": "/models/compressed/Untitled_Scan-2025-Aug-14_5_low.ply.gz",
+        "medium": "/models/compressed/Untitled_Scan-2025-Aug-14_5_medium.ply.gz",
+        "high": "/models/compressed/Untitled_Scan-2025-Aug-14_5_high.ply.gz"
+      },
+      "name": "scan11",
+      "position": [
+        4,
+        0,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pointSize": 0.01,
+      "color": "#ffffff",
+      "visible": true
+    }
+  ],
+  "backgroundColor": "#000000",
+  "pointCloudResolution": 0.5,
+  "progressiveLoading": false,
+  "timestamp": "2025-08-15T06:03:46.622Z",
+  "version": "1.0"
+}
