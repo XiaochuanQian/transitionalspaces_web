@@ -1079,15 +1079,15 @@ export function Scene3D({
       {/* Loading Screen */}
       {isLoading && (
         <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-stone-900 bg-opacity-90 backdrop-blur-sm transition-all duration-300"
-          style={{ fontFamily: '"Crimson Text", serif' }}
+          className="fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-sm transition-all duration-300"
+          style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}
         >
-          <div className="bg-white dark:bg-stone-800 shadow-2xl border border-stone-300 dark:border-stone-700 p-4 sm:p-6 lg:p-8 w-full max-w-2xl mx-4 sm:mx-6 lg:mx-8 transform transition-all duration-300">
+          <div className="bg-black bg-opacity-20 p-4 sm:p-6 lg:p-8 w-full max-w-2xl mx-4 sm:mx-6 lg:mx-8 transform transition-all duration-300 border-2 border-white rounded">
             <div className="text-center">
               {/* Icon */}
-              <div className="w-16 h-16 mb-6 bg-stone-100 dark:bg-stone-700 border border-stone-300 dark:border-stone-600 flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 mb-6 border-2 border-white rounded flex items-center justify-center mx-auto">
                 <svg 
-                  className="w-8 h-8 text-stone-700 dark:text-stone-300" 
+                  className="w-8 h-8 text-white" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -1102,24 +1102,24 @@ export function Scene3D({
               </div>
               
               {/* Title */}
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900 dark:text-stone-50 mb-3 lg:mb-4" style={{ fontFamily: '"Crimson Text", serif' }}>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 lg:mb-4" style={{ fontFamily: 'Arial, Helvetica, sans-serif', textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
                 Loading Environment
               </h1>
               
               {/* Subtitle */}
-              <p className="text-stone-700 dark:text-stone-300 text-lg sm:text-xl leading-relaxed mb-6">
+              <p className="text-white text-lg sm:text-xl leading-relaxed mb-6" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}>
               </p>
               
               {/* Progress Bar */}
-              <div className="w-full bg-stone-200 dark:bg-stone-700 border border-stone-300 dark:border-stone-600 h-3 mb-4">
+              <div className="w-full border-2 border-white rounded h-3 mb-4">
                 <div 
-                  className="bg-stone-800 dark:bg-stone-400 h-3 transition-all duration-300 ease-out"
+                  className="bg-white bg-opacity-20 h-3 transition-all duration-300 ease-out"
                   style={{ width: `${loadingProgress}%` }}
                 />
               </div>
               
               {/* Status Text */}
-              <div className="text-sm text-stone-600 dark:text-stone-400 mb-2">
+              <div className="text-sm text-white mb-2" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}>
                 {loadingProgress < 30 && "Initializing scene..."}
                 {loadingProgress >= 30 && loadingProgress < 60 && "Loading models..."}
                 {loadingProgress >= 60 && loadingProgress < 90 && "Setting up controls..."}
@@ -1127,7 +1127,7 @@ export function Scene3D({
               </div>
               
               {/* Progress Percentage */}
-              <div className="text-xs text-stone-500 dark:text-stone-500">
+              <div className="text-xs text-white" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}>
                 {Math.round(loadingProgress)}% complete
               </div>
             </div>
