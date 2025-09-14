@@ -265,7 +265,9 @@ function KeyboardController({
   pathPoints, 
   onPathPointAdd,
   pathEnabled,
-  boundaryHeight 
+  boundaryHeight,
+  restrictionsDisabled,
+  onRestrictionsToggle
 }: {
   isRecordingPath: boolean
   activityRadius: number
@@ -273,6 +275,8 @@ function KeyboardController({
   onPathPointAdd: (point: [number, number, number]) => void
   pathEnabled: boolean
   boundaryHeight: number
+  restrictionsDisabled: boolean
+  onRestrictionsToggle: () => void
 }) {
   const { camera } = useThree()
   const keysPressed = useRef<Set<string>>(new Set())
@@ -282,7 +286,13 @@ function KeyboardController({
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      keysPressed.current.add(event.key.toLowerCase())
+      const key = event.key.toLowerCase()
+      keysPressed.current.add(key)
+      
+      // Toggle restrictions with 'k' key
+      if (key === 'k') {
+        onRestrictionsToggle()
+      }
     }
 
     const handleKeyUp = (event: KeyboardEvent) => {
@@ -296,7 +306,7 @@ function KeyboardController({
       window.removeEventListener('keydown', handleKeyDown)
       window.removeEventListener('keyup', handleKeyUp)
     }
-  }, [])
+  }, [onRestrictionsToggle])
 
   useFrame((state, delta) => {
     const keys = keysPressed.current
@@ -382,6 +392,11 @@ function KeyboardController({
   
   // Helper function to check if position is within activity bounds using path polygon and height limit
   const isWithinActivityBounds = (position: THREE.Vector3): boolean => {
+    // If restrictions are temporarily disabled, allow movement anywhere
+    if (restrictionsDisabled) {
+      return true
+    }
+    
     // If path is disabled or no path points recorded yet, allow movement anywhere
     if (!pathEnabled || pathPoints.length < 3) {
       return true // Need at least 3 points to form a boundary
@@ -759,6 +774,7 @@ export function Scene3D({
    const [showPathState, setShowPathState] = useState<boolean>(showPath)
    const [pathEnabledState, setPathEnabledState] = useState<boolean>(pathEnabled)
    const [boundaryHeight, setBoundaryHeight] = useState<number>(2)
+   const [restrictionsDisabled, setRestrictionsDisabled] = useState<boolean>(false)
   
   // 视点导航状态
   const [customViewpoints, setCustomViewpoints] = useState<Viewpoint[]>([])
@@ -1159,6 +1175,8 @@ export function Scene3D({
           onPathPointAdd={handlePathPointAdd}
           pathEnabled={pathEnabledState}
           boundaryHeight={boundaryHeight}
+          restrictionsDisabled={restrictionsDisabled}
+          onRestrictionsToggle={() => setRestrictionsDisabled(!restrictionsDisabled)}
         />
         
         {/* Viewpoint Controller */}

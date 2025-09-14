@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface Viewpoint {
   id: string
@@ -24,21 +24,39 @@ export default function ViewpointPanel({
   onViewpointChange
 }: ViewpointPanelProps) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+
+  // Handle keyboard events for toggling panel visibility
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key.toLowerCase() === 'l') {
+        event.preventDefault()
+        setIsVisible(prev => !prev)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
   return (
     <div className="fixed top-4 right-4 z-50">
-      {/* Toggle Button */}
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="text-stone-50 border-2 border-white rounded hover:bg-white hover:bg-opacity-20 p-3 transition-all duration-200 flex items-center space-x-2"
-        style={{ fontFamily: 'Arial, Helvetica, sans-serif', textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}
-      >
-        <span className="text-lg"></span>
-        <span className="font-medium">Viewpoints</span>
-        <span className={`transform transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}>
-          ▼
-        </span>
-      </button>
+      {isVisible && (
+        <>
+          {/* Toggle Button */}
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-stone-50 border-2 border-white rounded hover:bg-white hover:bg-opacity-20 p-3 transition-all duration-200 flex items-center space-x-2"
+            style={{ fontFamily: 'Arial, Helvetica, sans-serif', textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}
+          >
+            <span className="text-lg"></span>
+            <span className="font-medium">Viewpoints</span>
+            <span className={`transform transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}>
+              ▼
+            </span>
+          </button>
 
       {/* Viewpoint Panel */}
       {isExpanded && (
@@ -100,10 +118,12 @@ export default function ViewpointPanel({
                     </span>
                   </div>
                 </div>
-              </div>
-            )}
+                </div>
+              )}
           </div>
         </div>
+      )}
+        </>
       )}
     </div>
   )
