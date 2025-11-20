@@ -1,4 +1,4 @@
-# Transitional Spaces
+# Interactive Web Art - Transitional Spaces
 ## Project Statement
 Transitional Space are merely the path we take to travel from A to B. It is an integral medium that revokes our personal emotions connected to these spaces. As the hundred year old neighborhood are torn down giving way to new commercial centers, the spaces that once held collective memories and forged communal ties fade away. This project seeks to capture and reimagine these ephemeral spaces, allowing a reflection on the impact of irreversible urbanization, gentrification, economic growth on community bonds and individual experiences.
 
